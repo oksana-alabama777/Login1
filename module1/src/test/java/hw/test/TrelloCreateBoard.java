@@ -10,13 +10,17 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TrelloLogin extends TrelloTestBase {
+public class TrelloCreateBoard extends TrelloTestBase {
 
     @Test
     public void TrelloLogin() {
         openSite();
         initLogIn();
         fillLogInForm();
+        initCreate();
+        initCreateBoard();
+        fillBoardCreationForm();
+        submitCreateBoard();
     }
 
 }
